@@ -1,0 +1,166 @@
+/* IT 3203 Milestone 1 - Google Chrome Website
+   Single stylesheet used across all pages.
+   Demonstrates element, class, and ID selectors.
+*/
+
+/* Element selector */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+/* ID selector */
+#site-header {
+    background-color: #1f3c88;
+    color: white;
+    padding: 20px;
+    border-bottom: 4px solid #16306d;
+}
+
+/* Class selectors */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+nav {
+    background-color: #0f2557;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px 0;
+    display: flex; /* flex layout requirement */
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ffd54f;
+    color: #111;
+}
+
+main {
+    padding: 20px 0 40px 0;
+}
+
+h1, h2, h3 {
+    color: #1f3c88;
+}
+
+img {
+    max-width: 100%;
+    border: 1px solid #c8d0da;
+    border-radius: 8px;
+    padding: 4px;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #bfc7d2;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #dfe8f7;
+}
+
+.highlight {
+    background-color: #eef4ff;
+    border-left: 5px solid #1f3c88;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+.key-terms {
+    display: grid; /* grid layout requirement */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.term-box {
+    border: 1px solid #c7d4ea;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #0f2557;
+    color: white;
+    padding: 18px 0;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ffd54f;
+}
+
+.small-note {
+    font-size: 0.95rem;
+}
+
+.caption {
+    font-size: 0.92rem;
+    color: #444;
+    margin-top: 6px;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.about-list li,
+.references-list li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
